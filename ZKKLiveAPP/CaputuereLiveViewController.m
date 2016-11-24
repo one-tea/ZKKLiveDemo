@@ -141,7 +141,7 @@
  */
 -(void )startLive{
 	LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
-	stream.url = @"rtmp://192.168.0.2:1990/liveApp/room";
+	stream.url = @"rtmp://192.168.0.2:1935/rtmplive/room";
 	[self.session startLive:stream];
 }
 -(void)stopLive{
