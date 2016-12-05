@@ -167,9 +167,6 @@
 	}
 }
 
-
-
-
  /**
   开启美颜 GPUImage
   */
@@ -180,7 +177,7 @@
 - (void)GPUImageWithSampleBuffer:(CMSampleBufferRef )sampleBuffer{
 	
 	if (_openBeautySwitch.isOn) {
-		GPUImageBeautifyFilter *beautifyFilter = [[GPUImageBeautifyFilter alloc]init];
+//		GPUImageBeautifyFilter *beautifyFilter = [[GPUImageBeautifyFilter alloc]init];
 //		self
 	}
 }

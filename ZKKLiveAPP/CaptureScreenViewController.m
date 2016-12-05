@@ -6,9 +6,9 @@
 //  Copyright © 2016年 zhangkk. All rights reserved.
 //
 
-#import "CaputuereLiveViewController.h"
+#import "CaptureScreenViewController.h"
 #import <LFLiveKit/LFLiveKit.h>
-@interface CaputuereLiveViewController ()<LFLiveSessionDelegate>{
+@interface CaptureScreenViewController ()<LFLiveSessionDelegate,UITextFieldDelegate>{
 	LFLiveSession *_session;
 }
 @property(nonatomic,strong)LFLiveSession *session;
@@ -20,9 +20,11 @@
 - (IBAction)changCamreBtn:(UIButton *)sender;
 - (IBAction)backBtn:(UIButton *)sender;
 
+
+
 @end
 
-@implementation CaputuereLiveViewController
+@implementation CaptureScreenViewController
 
 -(void )viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:YES];
@@ -32,12 +34,12 @@
 	[self startLive];
 	[self requestAccessForVideo];
 	[self requestAccessForAudio];
-
 	
 }
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	self.view.backgroundColor= [UIColor clearColor];
+
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -141,7 +143,7 @@
  */
 -(void )startLive{
 	LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
-	stream.url = @"rtmp://192.168.0.2:1935/rtmplive/room";
+	stream.url = @"rtmp://192.168.0.3:1990/liveAPP/room";
 	[self.session startLive:stream];
 }
 -(void)stopLive{
@@ -174,9 +176,9 @@
 	self.session.captureDevicePosition = (position == AVCaptureDevicePositionBack)?AVCaptureDevicePositionBack:AVCaptureDevicePositionFront;
 }
 
+
 - (IBAction)backBtn:(UIButton *)sender {
 	NSLog(@"返回");
-//	self.view.window.rootViewController =	self.tabBarController;
 
 	[self.tabBarController setSelectedIndex:0];
 	self.tabBarController.tabBar.hidden = NO;

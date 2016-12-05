@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CaputuereLiveViewController : UIViewController
+@interface CaptureScreenViewController : UIViewController
 
 @end

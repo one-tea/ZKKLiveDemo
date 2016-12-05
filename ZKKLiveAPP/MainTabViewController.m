@@ -9,7 +9,7 @@
 #import "MainTabViewController.h"
 #import "ViewListViewController.h"
 //#import "CaputureViewController.h"
-#import "CaputuereLiveViewController.h"
+#import "CaptureScreenViewController.h"
 @interface MainTabViewController ()
 
 @end
@@ -25,7 +25,7 @@
     // Do any additional setup after loading the view.
 	ViewListViewController  *viewlist = [[ViewListViewController alloc]init];
 	UINavigationController  *viewlistNav = [[UINavigationController alloc] initWithRootViewController:viewlist];
-	CaputuereLiveViewController *caputure = [[CaputuereLiveViewController alloc]init];
+	CaptureScreenViewController *caputure = [[CaptureScreenViewController alloc]init];
 
 	
 	

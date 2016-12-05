@@ -9,8 +9,8 @@
 #import "ViewListViewController.h"
 #import "LiveViewController.h"
 #import "AFNetworking.h"
-#import "YZLiveCell.h"
-#import "YZLiveItem.h"
+#import "LiveCell.h"
+#import "LiveItem.h"
 #import <MJExtension.h>
 @interface ViewListViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -44,7 +44,7 @@
 	self.navigationController.navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:18], NSForegroundColorAttributeName:[UIColor whiteColor]};
 	self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 	
-	[self.tableView registerNib:[UINib nibWithNibName:@"YZLiveCell" bundle:nil] forCellReuseIdentifier:@"viewlistcell"];
+	[self.tableView registerNib:[UINib nibWithNibName:@"LiveCell" bundle:nil] forCellReuseIdentifier:@"viewlistcell"];
 	
 	[self loadData];
 	
@@ -62,8 +62,7 @@
 	} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 		id obj =[NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
 		NSLog(@"viewListData:%@",obj);
-		_dataArry = [YZLiveItem mj_objectArrayWithKeyValuesArray:obj[@"lives"]];
-		
+		_dataArry = [LiveItem mj_objectArrayWithKeyValuesArray:obj[@"lives"]];
 		[_tableView reloadData];
 	} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 		NSLog(@"error:%@",error);
@@ -95,8 +94,10 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 	
-	YZLiveCell * cell = [tableView dequeueReusableCellWithIdentifier:@"viewlistcell" forIndexPath:indexPath];
-	cell.live = _dataArry[indexPath.row];
+	LiveCell * cell = [tableView dequeueReusableCellWithIdentifier:@"viewlistcell" forIndexPath:indexPath];
+	LiveItem *item = _dataArry[indexPath.row];
+	NSLog(@"item:%@",item.stream_addr);
+	[cell setLiveCell:item];
 	return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0A03A88E1DDB4041003C086E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A03A88D1DDB4041003C086E /* Assets.xcassets */; };
+		0A430DB71DF5010C0035BA91 /* LiveItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A430DB61DF5010C0035BA91 /* LiveItem.m */; };
 		0A8474B01DD5BBAF001900C9 /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8474AF1DD5BBAF001900C9 /* GPUImageBeautifyFilter.m */; };
-		0A8474B61DD73A2A001900C9 /* CaputuereLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8474B41DD73A2A001900C9 /* CaputuereLiveViewController.m */; };
-		0A8474B71DD73A2A001900C9 /* CaputuereLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8474B51DD73A2A001900C9 /* CaputuereLiveViewController.xib */; };
+		0A8474B61DD73A2A001900C9 /* CaptureScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8474B41DD73A2A001900C9 /* CaptureScreenViewController.m */; };
+		0A8474B71DD73A2A001900C9 /* CaptureScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8474B51DD73A2A001900C9 /* CaptureScreenViewController.xib */; };
 		0AD564491DD1B777008708BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD564481DD1B777008708BF /* main.m */; };
 		0AD5644C1DD1B777008708BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5644B1DD1B777008708BF /* AppDelegate.m */; };
 		0AD564511DD1B777008708BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD5644F1DD1B777008708BF /* LaunchScreen.storyboard */; };
@@ -42,10 +43,8 @@
 		0AD564AF1DD1CB74008708BF /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5649E1DD1CB74008708BF /* UIProgressView+AFNetworking.m */; };
 		0AD564B01DD1CB74008708BF /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD564A01DD1CB74008708BF /* UIRefreshControl+AFNetworking.m */; };
 		0AD564B11DD1CB74008708BF /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD564A21DD1CB74008708BF /* UIWebView+AFNetworking.m */; };
-		0AD564BA1DD1CEEB008708BF /* YZLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD564B81DD1CEEB008708BF /* YZLiveCell.m */; };
-		0AD564BB1DD1CEEB008708BF /* YZLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD564B91DD1CEEB008708BF /* YZLiveCell.xib */; };
-		0AD564C01DD1D184008708BF /* YZLiveItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD564BD1DD1D184008708BF /* YZLiveItem.m */; };
-		0AD564C11DD1D184008708BF /* YZCreatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD564BF1DD1D184008708BF /* YZCreatorItem.m */; };
+		0AD564BA1DD1CEEB008708BF /* LiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD564B81DD1CEEB008708BF /* LiveCell.m */; };
+		0AD564BB1DD1CEEB008708BF /* LiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AD564B91DD1CEEB008708BF /* LiveCell.xib */; };
 		0AD564C41DD1D39A008708BF /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD564C31DD1D39A008708BF /* LiveViewController.m */; };
 		0AEA13021DD2B9DE00F19CDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA13011DD2B9DE00F19CDE /* Images.xcassets */; };
 		0AEA13081DD3029000F19CDE /* CaputureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA13061DD3029000F19CDE /* CaputureViewController.m */; };
@@ -55,11 +54,13 @@
 
 /* Begin PBXFileReference section */
 		0A03A88D1DDB4041003C086E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A430DB51DF5010C0035BA91 /* LiveItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveItem.h; sourceTree = "<group>"; };
+		0A430DB61DF5010C0035BA91 /* LiveItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveItem.m; sourceTree = "<group>"; };
 		0A8474AE1DD5BBAF001900C9 /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
 		0A8474AF1DD5BBAF001900C9 /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
-		0A8474B31DD73A2A001900C9 /* CaputuereLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaputuereLiveViewController.h; sourceTree = "<group>"; };
-		0A8474B41DD73A2A001900C9 /* CaputuereLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaputuereLiveViewController.m; sourceTree = "<group>"; };
-		0A8474B51DD73A2A001900C9 /* CaputuereLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaputuereLiveViewController.xib; sourceTree = "<group>"; };
+		0A8474B31DD73A2A001900C9 /* CaptureScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureScreenViewController.h; sourceTree = "<group>"; };
+		0A8474B41DD73A2A001900C9 /* CaptureScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureScreenViewController.m; sourceTree = "<group>"; };
+		0A8474B51DD73A2A001900C9 /* CaptureScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CaptureScreenViewController.xib; sourceTree = "<group>"; };
 		0AD564441DD1B777008708BF /* ZKKLiveAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKKLiveAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD564481DD1B777008708BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AD5644A1DD1B777008708BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,13 +115,9 @@
 		0AD564A01DD1CB74008708BF /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		0AD564A11DD1CB74008708BF /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		0AD564A21DD1CB74008708BF /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		0AD564B71DD1CEEB008708BF /* YZLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZLiveCell.h; sourceTree = "<group>"; };
-		0AD564B81DD1CEEB008708BF /* YZLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZLiveCell.m; sourceTree = "<group>"; };
-		0AD564B91DD1CEEB008708BF /* YZLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YZLiveCell.xib; sourceTree = "<group>"; };
-		0AD564BC1DD1D184008708BF /* YZLiveItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZLiveItem.h; sourceTree = "<group>"; };
-		0AD564BD1DD1D184008708BF /* YZLiveItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZLiveItem.m; sourceTree = "<group>"; };
-		0AD564BE1DD1D184008708BF /* YZCreatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZCreatorItem.h; sourceTree = "<group>"; };
-		0AD564BF1DD1D184008708BF /* YZCreatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZCreatorItem.m; sourceTree = "<group>"; };
+		0AD564B71DD1CEEB008708BF /* LiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveCell.h; sourceTree = "<group>"; };
+		0AD564B81DD1CEEB008708BF /* LiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveCell.m; sourceTree = "<group>"; };
+		0AD564B91DD1CEEB008708BF /* LiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveCell.xib; sourceTree = "<group>"; };
 		0AD564C21DD1D39A008708BF /* LiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
 		0AD564C31DD1D39A008708BF /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
 		0AEA13011DD2B9DE00F19CDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -164,14 +161,14 @@
 			name = "GPUImage+BeautifyFilter";
 			sourceTree = "<group>";
 		};
-		0A8474B21DD73993001900C9 /* CaputureScreen(LFLiveKIt) */ = {
+		0A8474B21DD73993001900C9 /* CaptureScreen(LFLiveKIt) */ = {
 			isa = PBXGroup;
 			children = (
-				0A8474B31DD73A2A001900C9 /* CaputuereLiveViewController.h */,
-				0A8474B41DD73A2A001900C9 /* CaputuereLiveViewController.m */,
-				0A8474B51DD73A2A001900C9 /* CaputuereLiveViewController.xib */,
+				0A8474B31DD73A2A001900C9 /* CaptureScreenViewController.h */,
+				0A8474B41DD73A2A001900C9 /* CaptureScreenViewController.m */,
+				0A8474B51DD73A2A001900C9 /* CaptureScreenViewController.xib */,
 			);
-			name = "CaputureScreen(LFLiveKIt)";
+			name = "CaptureScreen(LFLiveKIt)";
 			sourceTree = "<group>";
 		};
 		0AD5643B1DD1B777008708BF = {
@@ -238,7 +235,7 @@
 		0AD5646F1DD1BD14008708BF /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				0A8474B21DD73993001900C9 /* CaputureScreen(LFLiveKIt) */,
+				0A8474B21DD73993001900C9 /* CaptureScreen(LFLiveKIt) */,
 				0AD564791DD1BEA9008708BF /* CaputureScreen(采集端) */,
 				0AD564781DD1BE9E008708BF /* ViewList（播放端） */,
 				0AD564701DD1BD56008708BF /* MainTabController */,
@@ -345,9 +342,9 @@
 		0AD564B41DD1CECF008708BF /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				0AD564B71DD1CEEB008708BF /* YZLiveCell.h */,
-				0AD564B81DD1CEEB008708BF /* YZLiveCell.m */,
-				0AD564B91DD1CEEB008708BF /* YZLiveCell.xib */,
+				0AD564B71DD1CEEB008708BF /* LiveCell.h */,
+				0AD564B81DD1CEEB008708BF /* LiveCell.m */,
+				0AD564B91DD1CEEB008708BF /* LiveCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -364,10 +361,8 @@
 		0AD564B61DD1CEDA008708BF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0AD564BC1DD1D184008708BF /* YZLiveItem.h */,
-				0AD564BD1DD1D184008708BF /* YZLiveItem.m */,
-				0AD564BE1DD1D184008708BF /* YZCreatorItem.h */,
-				0AD564BF1DD1D184008708BF /* YZCreatorItem.m */,
+				0A430DB51DF5010C0035BA91 /* LiveItem.h */,
+				0A430DB61DF5010C0035BA91 /* LiveItem.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -445,8 +440,8 @@
 			files = (
 				0AEA13021DD2B9DE00F19CDE /* Images.xcassets in Resources */,
 				0AD564511DD1B777008708BF /* LaunchScreen.storyboard in Resources */,
-				0AD564BB1DD1CEEB008708BF /* YZLiveCell.xib in Resources */,
-				0A8474B71DD73A2A001900C9 /* CaputuereLiveViewController.xib in Resources */,
+				0AD564BB1DD1CEEB008708BF /* LiveCell.xib in Resources */,
+				0A8474B71DD73A2A001900C9 /* CaptureScreenViewController.xib in Resources */,
 				0A03A88E1DDB4041003C086E /* Assets.xcassets in Resources */,
 				0AEA13091DD3029000F19CDE /* CaputureViewController.xib in Resources */,
 			);
@@ -518,21 +513,20 @@
 				0AD564A91DD1CB74008708BF /* AFAutoPurgingImageCache.m in Sources */,
 				0AD564AD1DD1CB74008708BF /* UIButton+AFNetworking.m in Sources */,
 				0AD564AC1DD1CB74008708BF /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				0A430DB71DF5010C0035BA91 /* LiveItem.m in Sources */,
 				0A8474B01DD5BBAF001900C9 /* GPUImageBeautifyFilter.m in Sources */,
 				0AD564A81DD1CB74008708BF /* AFURLSessionManager.m in Sources */,
-				0A8474B61DD73A2A001900C9 /* CaputuereLiveViewController.m in Sources */,
+				0A8474B61DD73A2A001900C9 /* CaptureScreenViewController.m in Sources */,
 				0AD564B01DD1CB74008708BF /* UIRefreshControl+AFNetworking.m in Sources */,
 				0AD564B11DD1CB74008708BF /* UIWebView+AFNetworking.m in Sources */,
 				0AD564A71DD1CB74008708BF /* AFURLResponseSerialization.m in Sources */,
 				0AD564A41DD1CB74008708BF /* AFNetworkReachabilityManager.m in Sources */,
 				0AD564A51DD1CB74008708BF /* AFSecurityPolicy.m in Sources */,
-				0AD564BA1DD1CEEB008708BF /* YZLiveCell.m in Sources */,
+				0AD564BA1DD1CEEB008708BF /* LiveCell.m in Sources */,
 				0AD564A31DD1CB74008708BF /* AFHTTPSessionManager.m in Sources */,
 				0AD564771DD1BE35008708BF /* MainTabViewController.m in Sources */,
 				0AD564AB1DD1CB74008708BF /* AFNetworkActivityIndicatorManager.m in Sources */,
 				0AD564491DD1B777008708BF /* main.m in Sources */,
-				0AD564C11DD1D184008708BF /* YZCreatorItem.m in Sources */,
-				0AD564C01DD1D184008708BF /* YZLiveItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,18 +1,17 @@
 //
-//  YZLiveCell.m
-//  YZLiveApp
 //
-//  Created by yz on 16/8/29.
-//  Copyright © 2016年 yz. All rights reserved.
+//  LiveItem.h
+//  ZKKLiveAPP
 //
-
-#import "YZLiveCell.h"
-#import "YZLiveItem.h"
-#import "YZCreatorItem.h"
+//  Created by Kevin on 16/12/5.
+//  Copyright © 2016年 zhangkk. All rights reserved.
+//
+#import "LiveCell.h"
+#import "LiveItem.h"
 #import <UIImageView+WebCache.h>
 #define Color(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
-@interface YZLiveCell ()
+@interface LiveCell ()
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *liveLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
@@ -21,21 +20,17 @@
 @property (weak, nonatomic) IBOutlet UIImageView *bigPicView;
 @end
 
-@implementation YZLiveCell
+@implementation LiveCell
 
-- (void)setLive:(YZLiveItem *)live
+- (void)setLiveCell:(LiveItem *)live
 {
-    _live = live;
 
     NSURL *imageUrl = [NSURL URLWithString:[NSString stringWithFormat:@"http://img.meelive.cn/%@",live.creator.portrait]];
     
     [self.headImageView sd_setImageWithURL:imageUrl placeholderImage:nil options:SDWebImageRefreshCached completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
     }];
-    if (live.city.length == 0) {
-        _addressLabel.text = @"难道在火星?";
-    }else{
-        _addressLabel.text = live.city;
-    }
+
+	_addressLabel.text = live.city;
 
     self.nameLabel.text = live.creator.nick;
 

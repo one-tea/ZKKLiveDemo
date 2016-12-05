@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@class YZLiveItem;
+@class LiveItem;
 @interface LiveViewController : UIViewController
-@property(nonatomic,strong)YZLiveItem *item;
+@property(nonatomic,strong)LiveItem *item;
 
 @end

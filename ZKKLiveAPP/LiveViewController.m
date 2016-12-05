@@ -9,8 +9,7 @@
 #import "LiveViewController.h"
 #import <IJKMediaFramework/IJKMediaFramework.h>
 #import <UIImageView+WebCache.h>
-#import "YZLiveItem.h"
-#import "YZCreatorItem.h"
+#import "LiveItem.h"
 @interface LiveViewController ()
 @property(nonatomic,strong)UIImageView *imageView;
 @property(nonatomic,strong)IJKFFMoviePlayerController *ijkLiveVeiw;
@@ -28,12 +27,7 @@
 	[backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
 	[backBtn setBackgroundColor:[UIColor colorWithWhite:0.5 alpha:0.3]];
 	backBtn.layer.cornerRadius = 10;
-	[self.view insertSubview:backBtn atIndex:2];
-	// 设置直播占位图片
-	NSURL *imageUrl = [NSURL URLWithString:[NSString stringWithFormat:@"http://img.meelive.cn/%@",_item.creator.portrait]];
-	self.imageView =[[UIImageView alloc]initWithFrame:SCREEN];
-	
-	[self.imageView sd_setImageWithURL:imageUrl placeholderImage:nil];
+
 	
 	// 拉流地址
 	NSURL *url = [NSURL URLWithString:_item.stream_addr];
@@ -42,8 +36,8 @@
 	_ijkLiveVeiw.view.frame = SCREEN;
 	[_ijkLiveVeiw prepareToPlay];
 	
-	[self.view insertSubview:_ijkLiveVeiw.view atIndex:1];
-	[self.view insertSubview:backBtn atIndex:2];
+	[self.view addSubview:_ijkLiveVeiw.view];
+	[self.view insertSubview:backBtn aboveSubview:_ijkLiveVeiw.view];
 
 }
 -(void)back{

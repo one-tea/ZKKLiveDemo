@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,6 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKO-Xk-d34">
+                    <rect key="frame" x="276" y="29" width="30" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="14Y-mv-cht"/>
                         <constraint firstAttribute="width" constant="30" id="ZfD-tT-Bfk"/>
@@ -31,6 +35,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciQ-wj-MIQ">
+                    <rect key="frame" x="322" y="29" width="30" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="I6b-zf-OqW"/>
                         <constraint firstAttribute="width" constant="30" id="INg-In-vPx"/>
@@ -43,6 +48,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al7-kG-8Mj">
+                    <rect key="frame" x="16" y="29" width="25" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="ATb-Hk-0DC"/>
                         <constraint firstAttribute="width" constant="25" id="YvP-aj-vUQ"/>
@@ -53,6 +59,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDi-M7-bLf">
+                    <rect key="frame" x="137" y="0.0" width="100" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="ykA-Rd-YOQ"/>
                         <constraint firstAttribute="width" constant="100" id="zt0-yB-Azr"/>
@@ -62,7 +69,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="ciQ-wj-MIQ" firstAttribute="leading" secondItem="BKO-Xk-d34" secondAttribute="trailing" constant="16" id="2OV-7I-ZgL"/>
@@ -74,7 +81,7 @@
                 <constraint firstItem="JDi-M7-bLf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-0.5" id="jWr-yO-X7E"/>
                 <constraint firstItem="ciQ-wj-MIQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="29" id="k7b-a9-wCO"/>
             </constraints>
-            <point key="canvasLocation" x="23" y="63"/>
+            <point key="canvasLocation" x="22.5" y="62.5"/>
         </view>
     </objects>
     <resources>
