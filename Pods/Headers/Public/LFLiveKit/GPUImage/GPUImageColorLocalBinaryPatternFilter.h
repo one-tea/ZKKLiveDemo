@@ -1,1 +1,0 @@
-../../../../LFLiveKit/Vendor/GPUImage.framework/Headers/GPUImageColorLocalBinaryPatternFilter.h
